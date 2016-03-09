@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<h1>#TITULO#</h1>
+<div class="row">
+    <form action="index.php?modulo=Locacao&acao=salvar&chave=#ID#" method="post" autocomplete="off">
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <input type="checkbox" id="ativo" name="ativo" value="1" #CHECKED#>
+                <label for="ativo">Locacão concluída</label>
+            </div>
+        </div>
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <label class="control-label" for="descricao">Descricao:</label>
+                <input type="text" class="form-control" id="descricao" name="descricao" value="#DESCRICAO#" placeholder="Descrição ou observação do aluguel">
+            </div>
+        </div>
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <label for="produtos">* Produtos:</label>
+                <br>
+                <select size="10" class="obg" name="produtos[]" multiple required>
+                    #OPTIONPRODUTOS#
+                </select>
+            </div>
+        </div>
+
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <label for="cliente">* Cliente:</label>
+                <br>
+                <select id="cliente_id" name="cliente_id" class="obg" required>
+                    #OPTIONCLIENTES#
+                </select>
+            </div>
+        </div>
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <label for="dia_locacao">* Dia locação:</label>
+                <input type="text" class="form-control obg" id="data_locacao" name="dia_locacao" value="#DIALOCACAO#" placeholder="Dia realizado a locação" required>
+            </div>
+        </div>
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <label for="dia_entrega">* Dia devolução:</label>
+                <input type="text" class="form-control obg" id="data_entrega" name="dia_entrega" value="#DIAENTREGA#" placeholder="Dia para a entrega" required>
+            </div>
+        </div>
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <span class="infor">Locação feita por: </span> #USUARIO#
+            </div>
+        </div>
+
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <p></p>
+                <p>* Campos obrigatórios</p>
+                <p></p>
+                <button class="btn btn-celestial-1" type="submit">Salvar</button>
+                <a href="index.php?modulo=Locacao&acao=listar"><button type="button" class="btn btn-celestial-2">Cancelar</button></a>
+            </div>
+        </div>
+    </form>
+</div>

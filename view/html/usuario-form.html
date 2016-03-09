@@ -1,0 +1,46 @@
+<h1>#TITULO#</h1>
+<div class="row">
+    <form action="index.php?modulo=Usuario&acao=salvar&chave=#ID#" method="post">
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-5">
+                <label class="control-label" for="nome">* Nome:</label>
+                <input type="text" class="form-control obg" id="nome" name="nome" value="#NOME#" required>
+            </div>
+        </div>
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-5">
+                <label class="control-label" for="email">* Email:</label>
+                <input type="email" class="form-control" id="email" name="email" value="#EMAIL#" required>
+            </div>
+        </div>
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-5">
+                <label class="control-label" for="senha">* Senha:</label>
+                <input type="password" class="form-control" id="senha" name="senha" value="#SENHA#" required>
+            </div>
+        </div>
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-3">
+                <label class="control-label" for="tipo">Tipo:</label>
+                <select name="tipo" class="form-control">
+                    #OPTIONTIPOS#
+                </select>
+            </div>
+        </div>
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-3">
+                <p></p>
+                <label><input type="checkbox" name="ativo" value="1" #CHECKED#> Ativo</label>
+            </div>
+        </div>
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <p></p>
+                <p>* Campos obrigatórios</p>
+                <p></p>
+                <button class="btn btn-celestial-1" type="submit">Salvar</button>
+                <a href="index.php?modulo=Usuario&acao=listar"><button type="button" class="btn btn-celestial-2">Cancelar</button></a>
+            </div>
+        </div>
+    </form>
+</div>

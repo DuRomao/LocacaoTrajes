@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<h1>#TITULO#</h1>
+<div class="row">
+    <form action="index.php?modulo=Cliente&acao=salvar&chave=#ID#" method="post">
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <label class="control-label" for="nome">* Nome:</label>
+                <input type="text" class="form-control obg" id="nome" name="nome" value="#NOME#" placeholder="Digite o nome completo" required>
+            </div>
+        </div>
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <label class="control-label" for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" value="#EMAIL#" placeholder="Digite o e-mail">
+            </div>
+        </div>
+
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <label class="control-label" for="rg">RG:</label>
+                <input type="text" class="form-control" id="rg" name="rg" value="#RG#" placeholder="Digite o RG">
+            </div>
+        </div>
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <label class="control-label" for="cpf">* CPF:</label>
+                <input type="text" class="form-control obg" id="cpf" name="cpf" value="#CPF#" placeholder="Digite o CPF" required>
+            </div>
+        </div>
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-4">
+                <label class="control-label" for="rua">Rua:</label>
+                <input type="text" class="form-control" id="rua" name="rua" value="#RUA#" placeholder="Digite a rua">
+            </div>
+            <div class="controls col-lg-2">
+                <label class="control-label" for="numero">Número:</label>
+                <input type="text" class="form-control" id="numero" name="numero" value="#NUMERO#" placeholder="Digite o número da casa">
+            </div>
+        </div>
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <label class="control-label" for="cep">CEP:</label>
+                <input type="text" class="form-control" id="cep" name="cep" value="#CEP#" placeholder="Digite o CEP da rua">
+            </div>
+        </div>
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <label class="control-label" for="bairro">Bairro:</label>
+                <input type="text" class="form-control" id="bairro" name="bairro" value="#BAIRRO#" placeholder="Bairro">
+            </div>
+        </div>       
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <label class="control-label" for="telefone">* Telefone Fixo:</label>
+                <input type="text" class="form-control obg" id="telefone" name="telefone" value="#TELEFONE#" placeholder="Digite o telefone fixo" required>
+            </div>
+        </div> 
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <label class="control-label" for="celular">* Telefone Celular:</label>
+                <input type="text" class="form-control obg" id="celular" name="celular" value="#CELULAR#" placeholder="Digite o celular" required>
+            </div>
+        </div> 
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <p></p>
+                <p>* Campos obrigatórios</p>
+                <p></p>
+                <button class="btn btn-celestial-1 submitButton" type="submit">Salvar</button>
+                <a href="index.php?modulo=Cliente&acao=listar"><button type="button" class="btn btn-celestial-2">Cancelar</button></a>
+            </div>
+        </div>
+    </form>
+</div>

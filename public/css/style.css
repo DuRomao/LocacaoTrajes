@@ -1,0 +1,59 @@
+body {
+    background:url('../img/vestido01.jpg') no-repeat right fixed;
+}
+.jumbotron h1 {
+    color: #CC6600;
+    text-shadow: 1px 1px 100px #663300;
+}
+.a:link,.per, a:focus, a:visited{
+    color:#CC6600;
+    text-decoration:none;
+    background-color: transparent;
+}
+a:hover, a:active {
+    background-color: transparent;
+    color:black;
+}
+.infor{
+    font-weight: bold;
+}
+.btn-celestial-1{
+    color: #fff;
+    background-color: #CC6600;
+}
+.btn-celestial-2{
+    color: #fff;
+    background-color: #FFCC66;
+}
+.fundo-celestial-1{
+    background-color: #fff;
+}
+.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus{
+    color:#fff;
+    font-weight: bold;
+    background-color:#CC6600;
+}
+.table-celestial>tbody>tr>td{
+    font-size: 85%;
+}
+.ui-datepicker-next, .ui-datepicker-prev{
+    background-color: #fff;
+}
+.ui-datepicker-year{
+    color: #000;
+}
+.btn-celestial-home{
+    width: 300px;
+    background-color: #fff;
+    color: #CC6600;
+    border-color: #CC6600;
+}
+
+.padding-celestial-centro{
+    padding-top: 10px;
+}
+
+.texto-celestial-1{
+    color: #CC6600;
+    font-size: 25px;
+}

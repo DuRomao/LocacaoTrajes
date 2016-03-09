@@ -1,0 +1,26 @@
+<h2>Produtos</h2>
+<a href="index.php?modulo=produto&acao=cadastrar"><button class="btn btn-celestial-1"><i class="glyphicon glyphicon-plus"></i> Cadastrar</button></a>
+<p></p>
+<form action="index.php?modulo=Produto&acao=pesquisa" method="post">
+    <div class="col-lg-6">
+        <input type="text" class="form-control" id="pesquisar" name="pesquisar" placeholder="Pesquisar código ou nome">
+    </div>
+    <button type="submit" class="btn btn-default">Pesquisar</button>
+</form>
+<hr>
+<table class="table table-bordered table-hover table-celestial fundo-celestial-1">
+    <thead>
+        <tr>
+            <th>Imagem</th>
+            <th>Codigo</th>
+            <th>Nome</th>
+            <th>Categoria</th>
+            <th>Aluguel</th>
+            <th>Disp.</th>
+            <th width="140">Ações</th>       
+        </tr>
+    </thead>
+    <tbody>
+        #LINHAS#
+    </tbody>
+</table>

@@ -1,0 +1,82 @@
+<h1>#TITULO#</h1>
+<div class="row">
+    <form action="index.php?modulo=Produto&acao=salvar&chave=#ID#" method="post" enctype="multipart/form-data">
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <label class="control-label" for="codigo">* Codigo:</label>
+                <input type="text" class="form-control obg" id="codigo" name="codigo" value="#CODIGO#" required>
+            </div>
+        </div>
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <label class="control-label" for="nome">* Nome:</label>
+                <input type="text" class="form-control obg" id="nome" name="nome" value="#NOME#" required>
+            </div>
+        </div>
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-3">
+                <label class="control-label" for="cor">Cor:</label>
+                <input type="text" class="form-control" id="cor" name="cor" value="#COR#">
+            </div>
+            <div class="controls col-lg-3">
+                <label class="control-label" for="tamanho">Tamanho:</label>
+                <input type="text" class="form-control" id="tamanho" name="tamanho" value="#TAMANHO#">
+            </div>
+        </div>
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <label class="control-label" for="valor_compra">Custo de compra/fabricação:</label>
+                <input type="text" class="form-control" id="valor_compra" name="valor_compra" value="#VALOR_COMPRA#">
+            </div>
+        </div>
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <label class="control-label" for="valor_aluguel">* Valor Aluguel:</label>
+                <input type="text" class="form-control obg" id="valor_aluguel" name="valor_aluguel" value="#VALOR_ALUGUEL#" required>
+            </div>
+        </div>
+
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <label class="control-label" for="categoria">Categoria:</label>
+                <select name="categoria" id="categoria" class="form-control obg">
+                    #OPTIONCATEGORIAS#
+                </select>
+            </div>
+        </div> 
+
+
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <label class="control-label" for="descricao">Descrição:</label>
+                <input type="text" class="form-control" id="descricao" name="descricao" value="#DESCRICAO#">
+            </div>
+        </div>
+        
+        <div class="control-group col-lg-12">    
+                <div class="controls col-lg-6">
+                    <label class="control-label" for="produto">Imagem do Produto:</label>
+                    <input type="file" class="" name="imagem" id="produto">
+                    <input type="hidden" name="imagem" value="#IMAGEM#" />
+ 
+                </div>
+            </div>
+
+
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-5">
+                <p></p>
+                <label><input type="checkbox" name="ativo" id="ativo" value="1" #CHECKED#> Ativo</label>
+            </div>
+        </div>
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <p></p>
+                <p>* Campos obrigatórios</p>
+                <p></p>
+                <button class="btn btn-celestial-1" type="submit">Salvar</button>
+                <a href="index.php?modulo=Produto&acao=listar"><button type="button" class="btn btn-celestial-2">Cancelar</button></a>
+            </div>
+        </div>
+    </form>
+</div>

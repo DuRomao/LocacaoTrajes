@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<h1>#TITULO#</h1>
+<div class="row">
+    <form action="index.php?modulo=Categoria&acao=salvar#ID#" method="post">
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <label class="control-label" for="nome">* Nome:</label>
+                <input type="text" class="form-control obg" id="nome" name="nome" value="#NOME#" placeholder="Digite o nome da categoria" required>
+            </div>
+        </div>
+        <div class="control-group col-lg-12">
+            <div class="controls col-lg-6">
+                <p></p>
+                <p>* Campo obrigatório</p>
+                <p></p>
+                <button class="btn btn-celestial-1" type="submit">Salvar</button>
+                <a href="index.php?modulo=Categoria&acao=listar"><button type="button" class="btn btn-celestial-2">Cancelar</button></a>
+            </div>
+        </div>
+    </form>
+</div>
