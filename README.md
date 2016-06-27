@@ -1,7 +1,7 @@
 <h1>LocacaoTrajes</h1>
 Sistema desenvolvido para loja de locação de trajes.<br>
 
-<h2>Tecnologias utilizadas:</h2>
+<b>Tecnologias utilizadas</b>
 <ul>
   <li>PHP</li>
   <li>Bootstrap</li>
